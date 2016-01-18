@@ -1,0 +1,42 @@
+
+{% comment %}
+__        __    _ _
+\ \      / / __(_) |_ ___ _ __ ___
+ \ \ /\ / / '__| | __/ _ \ '__/ __|
+  \ V  V /| |  | | ||  __/ |  \__ \
+   \_/\_/ |_|  |_|\__\___|_|  |___/
+{% endcomment %}
+
+{% if site.project == "argo_docs_writers" %}
+{% assign audience = "writers" %}
+{% assign sidebar = site.data.argo_docs.argo_docs_sidebar.entries %}
+{% assign topnav = site.data.argo_docs.argo_docs_topnav.topnav %}
+{% assign topnav_dropdowns = site.data.argo_docs.argo_docs_topnav.topnav_dropdowns %}
+{% assign version = "all" %}
+{% assign product = "all" %}
+{% assign platform = "all" %}
+{% assign projectTags = site.data.argo_docs.argo_docs_tags.allowed-tags %}
+{% assign projectFolder = "argo_docs" %}
+{% endif %}
+
+
+{% comment %}
+____            _
+|  _ \  ___  ___(_) __ _ _ __   ___ _ __ ___
+| | | |/ _ \/ __| |/ _` | '_ \ / _ \ '__/ __|
+| |_| |  __/\__ \ | (_| | | | |  __/ |  \__ \
+|____/ \___||___/_|\__, |_| |_|\___|_|  |___/
+                   |___/
+{% endcomment %}
+
+{% if site.project == "argo_docs_designers" %}
+{% assign audience = "designers" %}
+{% assign sidebar = site.data.argo_docs.argo_docs_sidebar.entries %}
+{% assign topnav = site.data.argo_docs.argo_docs_topnav.topnav %}
+{% assign topnav_dropdowns = site.data.argo_docs.argo_docs_topnav.topnav_dropdowns %}
+{% assign version = "all" %}
+{% assign product = "all" %}
+{% assign platform = "all" %}
+{% assign projectTags = site.data.argo_docs.argo_docs_tags.allowed-tags %}
+{% assign projectFolder = "argo_docs" %}
+{% endif %}

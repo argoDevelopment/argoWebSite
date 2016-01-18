@@ -1,0 +1,74 @@
+# Jekyll stuff
+
+
+# project definitions
+
+product: doc
+platform: all
+version: all
+output: web
+
+topnav: site.data.argo_docs.argo_docs_topnav.topnav
+topnav_dropdowns: site.data.argo_docs.argo_docs_topnav.topnav_dropdowns
+projectTags: site.data.argo_docs.argo_docs_tags.allowed-tags
+
+destination: ../argo_docs
+
+topnav_title: Argo Runtime Service Discovery
+homepage_title: Argo Runtime Service Discovery
+site_title: Argo Runtime Service Discovery
+
+project_folder: argo_docs
+company_name: Argo
+footer_image_location: ../common_images/company_logo.png
+#github_editme_path: tomjohnson1492/documentation-theme-jekyll/edit/reviews
+
+#disqus_shortname: argortsd
+# variables
+
+sidebar_tagline: Argo RTSD
+sidebar_version: Versi  0.4.1
+theme_file: theme-blue.css
+
+port: 4009
+
+exclude:
+  - _site
+  - _drafts
+  - configs/
+  - doc/argo_docs_writers*
+
+# same for all
+host: 127.0.0.1
+feedback_email: argodevelopment@gmail.com
+
+markdown: redcarpet
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
+
+highlighter: pygments
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+

@@ -1,0 +1,126 @@
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+        <script>
+
+            $(document).ready(function() {
+                // Initialize navgoco with default options
+                $("#mysidebar").navgoco({
+                    caretHtml: '',
+                    accordion: false,
+                    openClass: 'active', // open
+                    save: false, // leave false or nav highlighting doesn't work right
+                    cookie: {
+                        name: 'navgoco',
+                        expires: false,
+                        path: '/'
+                    },
+                    slide: {
+                        duration: 200,
+                        easing: 'linear'
+                    }
+                });
+
+                $("#collapseAll").click(function(e) {
+                    e.preventDefault();
+                    $("#mysidebar").navgoco('toggle', false);
+                });
+
+                $("#expandAll").click(function(e) {
+                    e.preventDefault();
+                    $("#mysidebar").navgoco('toggle', true);
+                });
+
+            });
+
+        </script>
+
+
+        <ul id="mysidebar" class="nav">
+
+
+            <span class="siteTagline"><img style="width: 100%" src="../argo_docs/images/main_logo.png"/> </span>
+            <span class="siteTagline">{{site.sidebar_tagline}}</span>
+            <span class="versionTagline">{{site.sidebar_version}}</span>
+
+            {% assign sidebar = site.data.argo_docs.argo_docs_sidebar.entries %}
+
+
+            {% for entry in sidebar %}
+                {% for subcategory in entry.subcategories %}
+                    {% if subcategory.title %}
+                        <li><a href="#">{{ subcategory.title }}</a>
+                            <ul>
+                                {% for item in subcategory.items %}
+                                    {% if item.external_url %}
+                                        <li><a href="{{item.external_url}}" target="_blank">{{subcategory.title}}</a></li>
+                                    {% elsif page.url == item.url %}
+                                     <li class="active"><a href="{{item.url | prepend: ".."}}">{{item.title}}</a></li>
+                                    {% else %}
+                                        {% if item.title %}
+                                            <li><a href="{{item.url | prepend: ".."}}">{{item.title}}</a></li>
+                                        {% endif %}
+                                    {% endif %}
+
+                                    {% for thirdlevel in item.thirdlevel %}
+                                        <li class="thirdlevel"><a href="#">{{ thirdlevel.title }}</a>
+                                            <ul>
+                                                {% for deeplevel in thirdlevel.thirdlevelitems %}
+                                                    {% if deeplevel.external_url %}
+                                                        <li><a href="{{deeplevel.external_url}}" target="_blank">{{deeplevel.title}}</a></li>
+                                                    {% elsif page.url == deeplevel.url %}
+                                                        <li class="active"><a href="{{deeplevel.url | prepend: ".."}}">{{deeplevel.title}}</a></li>
+                                                    {% else %}
+                                                        <li><a href="{{deeplevel.url | prepend: ".."}}">{{deeplevel.title}}</a></li>
+                                                    {% endif %}
+
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                    {% endfor %}
+
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+
+                 <!--if you aren't using the accordion, uncomment this block:-->
+                <style>
+                    .center { margin: auto; width: 80%; }
+                </style>
+                <div class="center">
+                     <p align=center class="external">
+                         <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+                     </p>
+                </div>
+
+
+                <!--<div>-->
+                    <!--<form style="border:1px solid #ccc;padding:3px;text-align:center;"-->
+                          <!--action="https://tinyletter.com/argodiscovery" method="post" target="popupwindow"-->
+                          <!--onsubmit="window.open('https://tinyletter.com/argodiscovery', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">-->
+                        <!--<p>-->
+                            <!--<label for="tlemail">Enter your email address</label>-->
+                        <!--</p>-->
+                        <!--<p>-->
+                            <!--<input type="text" style="width:140px" name="email" id="tlemail"/>-->
+                        <!--</p>-->
+                        <!--<input type="hidden" value="1" name="embed"/>-->
+                        <!--<input type="submit" value="Subscribe"/>-->
+                        <!--<p>-->
+                            <!--<a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>-->
+                        <!--</p>-->
+                    <!--</form>-->
+                <!--</div>-->
+    </div>
+    <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+    <script>$("li.active").parents('li').toggleClass("active");</script>
+    
+
+
+         

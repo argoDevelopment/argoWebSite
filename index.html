@@ -1,0 +1,28 @@
+---
+layout: none
+search: exclude
+---
+
+{% assign sidebar = site.data.argo_docs.argo_docs_sidebar.entries %}
+{% assign topnav = site.data.argo_docs.argo_docs_topnav.topnav %}
+{% assign topnav_dropdowns = site.data.argo_docs.argo_docs_topnav.topnav_dropdowns %}
+{% assign version = "all" %}
+{% assign product = "all" %}
+{% assign platform = "all" %}
+{% assign projectTags = site.data.argo_docs.argo_docs_tags.allowed-tags %}
+{% assign projectFolder = "argo_docs" %}
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url={{projectFolder}}/home.html">
+    <script type="text/javascript">
+        window.location.href = "{{projectFolder}}/home.html"
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
