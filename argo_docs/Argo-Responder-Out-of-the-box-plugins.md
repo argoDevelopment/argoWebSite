@@ -6,7 +6,6 @@ last_updated: January 15, 2015
 summary: "Overview of the protocol, architecture and components of Argo"
 ---
 
-
 The Argo Responder has a number of out-of-the-box plug-ins that can be included and configured to handle Argo probes.  Remember that the Argo Responder can be configured with multiple plug-ins simultaneously so that you can get multiple response effects from a single running responder.
 
 There isn't any artificial limitation on what you can do with a plug in.
