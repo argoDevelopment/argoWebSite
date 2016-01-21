@@ -1,5 +1,16 @@
-_For the response format look [here](https://github.com/di2e/Argo/wiki/Argo-Response-Format)._
-# Argo Probe Format
+---
+title: Argo Probe Format
+tags:
+    - protocol
+    - wireline-format
+keywords: protocol wireline format
+last_updated: November 30, 2015
+summary: "The wireline format for the Argo probe."
+---
+
+{{site.data.alerts.note}}
+For the response format look <a href="Argo-Response-Format.html">here</a>.
+{{site.data.alerts.end}}
 
 The Argo protocol is a multicast request (or probe) and a unicast response.  Client will send a UDP Multicast request packet called a probe.  The notion of a probe is consistent with other similar protocols such as WS-Discovery.  The probe should attempt to fit under the 576 byte IPv4 limit minimum datagram packet size, therefore the probe wire-line format is fairly terse.  Currently, a probe can be in XML.  The format is shown below:
 

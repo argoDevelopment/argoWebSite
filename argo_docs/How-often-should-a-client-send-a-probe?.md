@@ -3,7 +3,7 @@ title: How often should a client send a probe?
 tags: [roadmap, security, architecture]
 keywords: plugin, components, deployment, installation, security
 last_updated: January 15, 2015
-summary: "Security, security ... got to go, got to go."
+summary: "Probes take network resources.  Send wisely."
 ---
 
 

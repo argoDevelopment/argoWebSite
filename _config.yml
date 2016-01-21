@@ -26,8 +26,8 @@ footer_image_location: ../common_images/company_logo.png
 #disqus_shortname: argortsd
 # variables
 
-sidebar_tagline: Argo RTSD
-sidebar_version: Versi  0.4.1
+sidebar_tagline:
+sidebar_version: Version 0.4.1
 theme_file: theme-blue.css
 
 port: 4009

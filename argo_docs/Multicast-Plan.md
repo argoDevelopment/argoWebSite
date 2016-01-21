@@ -1,3 +1,11 @@
+---
+title: Multicast Plan
+tags: [roadmap, security, architecture]
+keywords: plugin, components, deployment, installation, security
+last_updated: January 15, 2015
+summary: "When multicasting, you'll have to have a comprehensive plan for that in your network"
+---
+
 # Multicast Plan
 
 The Argo protocol requires that UDP multicast packets traverse the network.  All of the other major multicast-based discovery mechanisms limit their multicast packets, but specification, to the local network.  This is incredibly limiting for discovery across networks.  To really get the bang out of Argo, the network should be configured, the greatest extent possible, to allow multicast traffic for the Argo protocol to move from one network to another.  This should be true especially for Mobile Adhoc Networks (MANETs).

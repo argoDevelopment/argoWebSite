@@ -1,4 +1,10 @@
-# Argo Response Format
+---
+title: Argo Response Format
+tags: [roadmap, security, architecture]
+keywords: plugin, components, deployment, installation, security
+last_updated: January 15, 2015
+summary: "Response Format"
+---
 
 An Argo service response is a very simple and general-purpose mechanism to communicate remote service configuration information to service clients.  It’s expected that a client will use that configuration information to automatically configure itself with the appropriate parameters without the use or support of a system administrator or other tertiary support staff.
 

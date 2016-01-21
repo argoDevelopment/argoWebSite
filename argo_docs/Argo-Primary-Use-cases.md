@@ -1,3 +1,12 @@
+---
+title: Primary Use-Cases
+tags:
+    - plugin
+keywords: plugins
+last_updated: November 30, 2015
+summary: "There are a few primary use-cases for Argo.  This article describes them in a fairly high level of detail."
+---
+
 There are a number of basic use-cases or requirements that Argo was developed to satisfy.  All of these use-cases deal with the realization of Service-Oriented Architecture in a practical sense.  Further, Argo is considered a primary component in cyber-security as well as a major player in military and intelligence networks that can - and will - be attacked in any future Cyber-war conflict.
 
 ## Distribute Remote Client Configuration Information

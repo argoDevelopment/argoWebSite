@@ -74,41 +74,22 @@ entries:
       version: all
       output: web, pdf
 
-    - title: Argo Architecture and Protocol
-      url: /argo_docs/Architecture-and-Protocol.html
+    - title: Primary Use-Cases
+      url: /argo_docs/Argo-Primary-Use-cases.html
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: Argo Responder no_browser mode
-      url: /argo_docs/Argo-Responder-no_browser-mode.html
+    - title: Flexible Architecture
+      url: /argo_docs/Argo-Flexible-Architecture.html
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: Argo Responder Out-of-the-box plugins
-      url: /argo_docs/Argo-Responder-Out-of-the-box-plugins.html
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
 
-    - title: Argo Responder Plugin Architecure
-      url: /argo_docs/Argo-Responder-Plugin-Architecture.md
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
 
-    - title: Argo Response Format
-      url: /argo_docs/Argo-Response-Format.html
-      url: /argo_docs/Argo-Response-Format.html
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
 
     - title: Roadmap
       url: /argo_docs/Argo-Roadmap.html
@@ -131,395 +112,123 @@ entries:
       version: all
       output: web, pdf
 
-
-
-  - title: Authoring
-    platform: all
-    product: all
-    version: all
-    output: web, pdf
-    items:
-    - title: Pages
-      url: /argo_docs/argo_docs_pages.html
+    - title: Multicast Plan
+      url: /argo_docs/Multicast-Plan.html
       platform: all
       product: all
       version: all
       output: web, pdf
 
-#    - title: WebStorm Text Editor
-#      url: /argo_docs/argo_docs_webstorm_text_editor.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Conditional logic
-#      url: /argo_docs/argo_docs_conditional_logic.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Content reuse
-#      url: /argo_docs/argo_docs_content_reuse.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Collections
-#      url: /argo_docs/argo_docs_collections.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-
-  - title: Navigation
-    platform: all
-    product: all
-    version: all
-    output: web, pdf
-    items:
-    - title: Sidebar navigation
-      url: /argo_docs/argo_docs_sidebar_navigation.html
+    - title: Firewall Changes
+      url: /argo_docs/Argo-Firewall-Changes.html
       platform: all
       product: all
       version: all
       output: web, pdf
 
-#    - title: Tags
-#      url: /argo_docs/argo_docs_tags.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Series
-#      url: /argo_docs/argo_docs_series.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
+    - title: Argo Service Browser
+      url: /argo_docs/Argo-Browser-Client-Application.html
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
 
-#  - title: Formatting
-#    platform: all
-#    product: all
-#    version: all
-#    output: web, pdf
-#    items:
-#    - title: Tooltips
-#      url: /argo_docs/argo_docs_adding_tooltips.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Alerts
-#      url: /argo_docs/argo_docs_alerts.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Icons
-#      url: /argo_docs/argo_docs_icons.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Images
-#      url: /argo_docs/argo_docs_images.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Labels
-#      url: /argo_docs/argo_docs_labels.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Links
-#      url: /argo_docs/argo_docs_hyperlinks.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Navtabs
-#      url: /argo_docs/argo_docs_navtabs.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Video embeds
-#      url: /argo_docs/argo_docs_video_embeds.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Tables
-#      url: /argo_docs/argo_docs_tables.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Syntax highlighting
-#      url: /argo_docs/argo_docs_syntax_highlighting.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#  - title: Handling reviews
-#    platform: all
-#    product: all
-#    version: all
-#    output: web, pdf
-#    items:
-#    - title: Commenting on files
-#      url: /argo_docs/argo_docs_commenting_on_files.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#  - title: Publishing
-#    platform: all
-#    product: all
-#    version: all
-#    output: web, pdf
-#    items:
-#
-#    - title: Build arguments
-#      url: /argo_docs/argo_docs_build_arguments.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Themes
-#      url: /argo_docs/argo_docs_themes.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Link validation
-#      url: /argo_docs/argo_docs_link_validation.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Check page title consistency
-#      url: /argo_docs/argo_docs_title_checker.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Generating PDFs
-#      url: /argo_docs/argo_docs_generating_pdfs.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Excluding files
-#      url: /argo_docs/argo_docs_excluding_files.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Help APIs and UI tooltips
-#      url: /argo_docs/argo_docs_help_api.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Search configuration
-#      url: /argo_docs/argo_docs_search_configuration.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: iTerm profiles
-#      url: /argo_docs/argo_docs_iterm_profiles.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Pushing builds to server
-#      url: /argo_docs/argo_docs_push_build_to_server.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Getting around the password prompts in SCP
-#      url: /argo_docs/argo_docs_no_password_prompts_scp.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#  - title: Special layouts
-#    platform: all
-#    product: all
-#    version: all
-#    output: web, pdf
-#    items:
-#
-#    - title: Knowledge-base layout
-#      url: /argo_docs/argo_docs_kb_layout.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Scroll layout
-#      url: /argo_docs/argo_docs_scroll.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Shuffle layout
-#      url: /argo_docs/argo_docs_shuffle.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: FAQ layout
-#      url: /argo_docs/argo_docs_faq.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Glossary layout
-#      url: /argo_docs/argo_docs_glossary.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
+  - title: Protocol
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
 
-#  - title: Collaborating with version control
-#    audience: writers, designers
-#    platform: all
-#    product: all
-#    version: all
-#    output: web, pdf
-#    items:
-#
-#    - title: Mercurial notes and tips
-#      url: /argo_docs/argo_docs_mercurial_collaboration.html
-#      audience: writers, designers
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#    - title: Git notes and tips
-#      url: /argo_docs/argo_docs_git_collaboration.html
-#      audience: writers, designers
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
+        - title: Argo Probe Format
+          url: /argo_docs/Argo-Probe-Format.html
+          platform: all
+          product: all
+          version: all
+          output: web, pdf
 
-#  - title: Troubleshooting
-#    platform: all
-#    product: all
-#    version: all
-#    output: web, pdf
-#    items:
-#
-#    - title: Troubleshooting
-#      url: /argo_docs/argo_docs_troubleshooting.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web, pdf
-#
-#  - title: Tag archives
-#    platform: all
-#    product: all
-#    version: all
-#    output: web
-#    items:
-#
-#    - title: Tag archives overview
-#      url: /argo_docs/argo_docs_tag_archives_overview.html
-#      platform: all
-#      product: all
-#      version: all
-#      output: web
-#
-#      thirdlevel:
-#      - title: Tag archive pages
-#        platform: all
-#        version: all
-#        product: all
-#        output: web
-#        thirdlevelitems:
-#        - title: Getting started pages
-#          url: /argo_docs/tag_getting_started.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
-#
-#        - title: Formatting pages
-#          url: /argo_docs/tag_formatting.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
-#
-#        - title: Navigation pages
-#          url: /argo_docs/tag_navigation.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
-#
-#        - title: Content types pages
-#          url: /argo_docs/tag_content_types.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
-#
-#        - title: Publishing pages
-#          url: /argo_docs/tag_publishing.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
-#
-#        - title: Special layout pages
-#          url: /argo_docs/tag_special_layouts.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
-#
-#        - title: Collaboration pages
-#          url: /argo_docs/tag_collaboration.html
-#          platform: all
-#          version: all
-#          product: all
-#          output: web
+        - title: Service Record Examples
+          url: /argo_docs/Service-Record-Examples.html
+          platform: all
+          product: all
+          version: all
+          output: web, pdf
+
+        - title: Argo Response Format
+          url: /argo_docs/Argo-Response-Format.html
+          platform: all
+          product: all
+          version: all
+          output: web, pdf
+
+
+  - title: Architecture
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Architecture and Protocol
+      url: /argo_docs/Architecture-and-Protocol.html
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+
+  - title: Components
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+     - title: Components Overview
+       url: /argo_docs/tag_getting_started.html
+       platform: all
+       product: all
+       version: all
+       output: web
+
+       thirdlevel:
+        - title: Responder
+          platform: all
+          version: all
+          product: all
+          output: web
+          thirdlevelitems:
+          - title: Installation
+            url: /argo_docs/tag_getting_started.html
+            platform: all
+            version: all
+            product: all
+            output: web
+
+          - title: Configuration
+            url: /argo_docs/tag_formatting.html
+            platform: all
+            version: all
+            product: all
+            output: web
+
+          - title: Responder no_browser mode
+            url: /argo_docs/Argo-Responder-no_browser-mode.html
+            platform: all
+            product: all
+            version: all
+            output: web, pdf
+
+          - title: Responder Out-of-the-box plugins
+            url: /argo_docs/Argo-Responder-Out-of-the-box-plugins.html
+            platform: all
+            product: all
+            version: all
+            output: web, pdf
+
+          - title: Responder Plugin Architecure
+            url: /argo_docs/Argo-Responder-Plugin-Architecture.md
+            platform: all
+            product: all
+            version: all
+            output: web, pdf

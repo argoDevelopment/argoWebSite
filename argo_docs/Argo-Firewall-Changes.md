@@ -1,6 +1,13 @@
-# **Argo Firewall Changes**
+---
+title: Argo Firewall Changes
+tags: [roadmap, security, architecture]
+keywords: plugin, components, deployment, installation, security
+last_updated: January 15, 2015
+summary: "Poking the right holes in the firewall"
+---
 
-In order to use the Argo protocol, there are some changes that you need to make to the firewall of the hosts that run the Argo Responder.  You may need to make some changes to any other firewalls that separate traffic which you'd like Argo messages to traverse.
+
+In order to use the Argo protocol with the multicast transport, there are some changes that you need to make to the firewall of the hosts that run the Argo Responder.  You may need to make some changes to any other firewalls that separate traffic which you'd like Argo messages to traverse.
 
 These changes are not hard and usually won't freak out your network admin people.
 

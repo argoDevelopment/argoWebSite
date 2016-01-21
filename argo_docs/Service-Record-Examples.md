@@ -1,8 +1,14 @@
-#Service Record Examples
+---
+title: Service Record Examples
+tags: [plugin, architecture]
+keywords: plugin, components, deployment, installation
+last_updated: January 15, 2015
+summary: "Some exmaples of how service records might look"
+---
 
 Some examples of `connection metadata blocks` include:
 
-###*Web Service*
+##Web Service
 
 ```xml
 <service id="the unique ID of the service instance">
@@ -14,7 +20,7 @@ With a Web Service, usually all you need is the URL to the service.  All the res
 
 There is no need to include the IP address or port of the service in the `ipAddress` or `port` elements (as they are usually included in the URL).  However, if you like, you can cut up the URL however you like (assuming the clients know how the metadata is structured).  This is a function of the service contract.
 
-###*Database*
+##Database
 ```xml
 <service id="the unique ID of the service instance">
     <url>jdbc:oracle:thin:@172.99.101.4:1521:AwesomeDatabase</url>
@@ -43,7 +49,7 @@ Alternatively, if the service contract explicitly declared the use of a n Oracle
 </service>
 ```
 
-###*Message-Oriented Middleware*
+##Message-Oriented Middleware
 
 ```xml
 <service id="the unique ID of the service instance">
@@ -71,7 +77,7 @@ You certainly could have done this:
 
 The idea here is that you have a choice about how you use the elements in the service record.  There is no convention.  In fact, you could put all your connection information in the `data` element is some Base64 encoded or encrypted format.  As long as the client receiving this service record in response to a probe knows what to do with the response payload, you're ok.  And all of the necessary instructions on how to parse and utilize the Argo response payload should be spelled out in detail in the design-time documentation for the developers when they build the client code.
 
-###*A Regular Website*
+##A Regular Website
 
 The Argo discovery protocol allows the service record to provide connection information about human-consumable services as well.  There is no reason why service discovery should only be some sort of machine consumable service.  That kind of makes Argo a type of web site finder in an unstable network - especially one that has DNS disabled via cyberattack.
 

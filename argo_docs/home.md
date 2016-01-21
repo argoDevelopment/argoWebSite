@@ -10,7 +10,7 @@ homepage: true
 
 
 
-**NOTE:** The v0.4.1 is the current release. For more information, please see the [Roadmap](https://github.com/di2e/Argo/wiki/Argo-Roadmap).
+**NOTE:** The v0.4.1 is the current release. For more information, please see the [Roadmap](Argo-Roadmap.html).
 
 ## **What is Runtime Service Discovery?**
 
@@ -20,7 +20,7 @@ Argo is extremely easy to use.  To have your services participate in the discove
 
 ## What does Argo do?
 
-To see what Argo does and why it does it, please read the [Argo Primary Use-cases](https://github.com/di2e/Argo/wiki/Argo-Primary-Use-cases).
+To see what Argo does and why it does it, please read the [Argo Primary Use-cases](Argo-Primary-Use-cases.html).
 
 ## Up and Running in 5 Minutes
 
